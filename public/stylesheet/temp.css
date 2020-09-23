@@ -1,0 +1,19 @@
+
+.thumbnail img{
+	width:100% ;
+}
+.thumbnail{
+	padding:0;
+}
+#commentbtn{
+		display: inline ;
+	}
+#deletebtn{
+		display:inline;
+}
+
+#clickme{
+	color: #337ab7;
+	margin-top:17px;
+	font-size:18px;
+}

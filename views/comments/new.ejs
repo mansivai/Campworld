@@ -1,0 +1,32 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+	<div class="row">
+		
+	
+	<h2 style="text-align:center">
+		 Add a new Comment for <strong><%= campgound.name%></strong> 
+	</h2>
+		<div style="width: 30%; margin: 25px auto">
+			<form action="/campgrounds/<%= campgound._id%>/comments" method="post">
+				<div class="form-group">
+					<label for="fname">Comment As: <%= currentUser.username%></label>
+					<input class="form-control" id="fname" type="text" placeholder="text" name="comment[text]"  required>
+				</div>
+				<!-- <div class="form-group">
+					<label  for="img">Name:</label>
+					<input class= "form-control" id="img" type="text" placeholder="author" name="comment[author]" required >
+				</div> -->
+				<div class="form-group">
+					<button class="btn btn-lg btn-primary btn-block">
+						Submit
+					</button>
+				</div>
+			</form>
+			<a href="/campgrounds/<%=campgound._id%>">GO BACK</a>
+		</div>
+		
+	</div>
+</div>
+
+<%- include("../partials/footer") %>
